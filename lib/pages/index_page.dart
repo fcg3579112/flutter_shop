@@ -55,9 +55,12 @@ class _IndexPageState extends State<IndexPage> {
           builder: (context) {
             return CupertinoPageScaffold(
               navigationBar: CupertinoNavigationBar(
-                middle: Text(titles[index]),
-                backgroundColor: Colors.green,
-              ),  
+                middle: Text(
+                  titles[index],
+                  style: TextStyle(color: Colors.white, fontSize: 20),
+                ),
+                backgroundColor: Colors.pink,
+              ),
               child: tabBodies[index],
             );
           },
